@@ -121,7 +121,8 @@ class ProjectController extends Controller
     private function validation($formData) {
         $validator = Validator::make($formData, [
             'title' => 'required|max:200|min:3',
-            'content' => 'required'
+            'content' => 'required',
+            'type_id' => 'nullable'
         ], [
             'title.max' => 'Il titolo deve avere massimo :max caratteri',
             'title.required' => 'Devi inserire un titolo',
