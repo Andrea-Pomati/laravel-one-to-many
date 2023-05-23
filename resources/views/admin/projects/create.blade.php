@@ -20,10 +20,11 @@
         <div class="mb-3">
             <label for="type_id">Tipo</label>
             <select name="type_id" id="Type_id" class="form-select">
+                
                 <option value="">Nessuna</option>
 
                 @foreach ($types as $type)
-                    <option value="type->id">{{$type->name}}</option>
+                    <option value="{{$type->id}}"">{{$type->name}}</option>
                 @endforeach
 
 
