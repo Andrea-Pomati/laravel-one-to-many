@@ -18,6 +18,22 @@
         </div>
 
         <div class="mb-3">
+            <label for="type_id">Tipo</label>
+            <select name="type_id" id="Type_id" class="form-select">
+                <option value="">Nessuna</option>
+
+                @foreach ($types as $type)
+                    <option value="type->id">{{$type->name}}</option>
+                @endforeach
+
+
+
+            </select>
+        </div>
+
+        
+
+        <div class="mb-3">
             <label for="content">Contenuto del progetto</label>
             <textarea name="content" id="content" cols="30" rows="10" class="form-control @error('content') is-invalid @enderror">{{old('content')}}</textarea>
             @error('content')
