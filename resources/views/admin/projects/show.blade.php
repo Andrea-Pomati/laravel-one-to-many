@@ -4,7 +4,7 @@
 
 <div class="main pt-5">
     <h1 class="">Visualizzazione progetto</h1>
-    <span>Categoria: </span>
+    <span>Categoria: {{$project->type ? $project->type->name : 'nessuna'}}</span>
 
     <hr class="mb-4">
 
