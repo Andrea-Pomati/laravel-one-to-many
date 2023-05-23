@@ -28,15 +28,12 @@
                 @endforeach
 
             </select>
-
-           
+            
                 @error('type_id')
                     <div class="invalid-feedback">
                         {{$message}}
                     </div>
                 @enderror
-            
-
         </div>
 
         
