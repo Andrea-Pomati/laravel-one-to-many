@@ -122,12 +122,13 @@ class ProjectController extends Controller
         $validator = Validator::make($formData, [
             'title' => 'required|max:200|min:3',
             'content' => 'required',
-            'type_id' => 'nullable'
+            'type_id' => 'nullable|exists:types,id',
         ], [
             'title.max' => 'Il titolo deve avere massimo :max caratteri',
             'title.required' => 'Devi inserire un titolo',
             'title.min' => 'Il titolo deve avere minimo :min caratteri',
             'content.required' => 'Il post deve avere un contenuto',
+            'type_id.exists' => 'Il tipo deve essere presente nel nostro sito'
         ])->validate();
     }
 }
