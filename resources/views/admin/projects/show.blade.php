@@ -4,6 +4,7 @@
 
 <div class="main pt-5">
     <h1 class="">Visualizzazione progetto</h1>
+    <span>Categoria: </span>
 
     <hr class="mb-4">
 
