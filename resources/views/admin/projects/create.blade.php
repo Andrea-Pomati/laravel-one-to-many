@@ -19,7 +19,7 @@
 
         <div class="mb-3">
             <label for="type_id">Tipo</label>
-            <select name="type_id" id="Type_id" class="form-select">
+            <select name="type_id" id="Type_id" class="form-select @error('type_id') is-invalid @enderror">
                 
                 <option value="">Nessuna</option>
 
@@ -27,9 +27,16 @@
                     <option value="{{$type->id}}"">{{$type->name}}</option>
                 @endforeach
 
-
-
             </select>
+
+           
+                @error('type_id')
+                    <div class="invalid-feedback">
+                        {{$message}}
+                    </div>
+                @enderror
+            
+
         </div>
 
         
