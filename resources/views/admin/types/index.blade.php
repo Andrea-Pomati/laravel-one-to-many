@@ -29,6 +29,9 @@
 
 
         </table>
+        <div class="d-flex justify-content-center py-3">
+            <a href="{{route('admin.types.create')}}" class="btn btn-primary">Aggiungi un tipo</a>
+        </div>
     </div>
 
 @endsection
