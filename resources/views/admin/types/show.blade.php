@@ -5,7 +5,7 @@
 <div class="container py-3">
 
     <h1>Tutti i progetti di tipo {{$type->name}}</h1>
-
+    @if( count($type->projects) > 0)
     <table class="mt-5 table table-striped mb-4">
         <thead>
             <th>
@@ -33,7 +33,11 @@
             @endforeach
         </tbody>
     </table>   
+    @else
 
+    <em>Nessun progetto di questo tipo</em>
+
+    @endif
 </div>
 
 @endsection
