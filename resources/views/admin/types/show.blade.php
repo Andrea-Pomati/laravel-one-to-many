@@ -38,6 +38,10 @@
     <em>Nessun progetto di questo tipo</em>
 
     @endif
+
+    <div class="d-flex justify-content-around">
+        <a href="{{route('admin.types.edit', $type)}}" class="btn btn-secondary">Modifica il tipo</a>
+    </div>
 </div>
 
 @endsection
