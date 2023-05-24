@@ -10,7 +10,7 @@
                 <th>Nome</th>
                 <th>Descrizione</th>
                 <th>Slug</th>
-                <th></th>
+                <th>Comandi</th>
             </thead>
 
             <tbody>
