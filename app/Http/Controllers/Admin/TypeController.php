@@ -14,8 +14,9 @@ class TypeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return view('admin.types.index');
+    {   
+        $types = Type::all();
+        return view('admin.types.index', compact('types'));
     }
 
     /**
