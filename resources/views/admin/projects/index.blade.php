@@ -14,6 +14,9 @@
             Slug
         </th>
         <th>
+            Tipo
+        </th>
+        <th>
             Comandi
         </th>
     </thead>
@@ -24,6 +27,7 @@
             <td>{{$project->title}}</td>
             <td>{{$project->content}}</td>
             <td>{{$project->slug}}</td>
+            <td>{{$project->type?->name}}</td>
             <td><a href="{{route('admin.projects.show', $project->slug)}}"><i class="fa-solid fa-magnifying-glass"></i></a></td>
         </tr>
         @endforeach
