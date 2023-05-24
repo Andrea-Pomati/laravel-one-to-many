@@ -121,6 +121,16 @@ return str_contains(Route::currentRouteName(), $string );
                 <a href="{{route('admin.projects.create')}}" class="list-group-item list-group-item-action {{routeNameContains('projects.create') ? 'active' : ''  }}">Aggiungi un progetto</a>
             </div>
         </div>
+        {{-- card types --}}
+        <div class="card {{ routeNameContains('types.') ? 'border-primary' : ''}}">
+            <div class="card-header {{ routeNameContains('types.') ? 'text-primary' : ''}}">
+                Tipi
+            </div>
+            <div class="list-group list-group-flush">
+                <a href="{{route('admin.types.index')}}" class="list-group-item list-group-item-action {{routeNameContains('types.index') ? 'active' : ''  }}">Tutti i tipi</a>
+                <a href="{{route('admin.types.create')}}" class="list-group-item list-group-item-action {{routeNameContains('types.create') ? 'active' : ''  }}">Aggiungi un tipo</a>
+            </div>
+        </div>
     </aside>
 
     <main class="container">
